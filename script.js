@@ -199,7 +199,7 @@ async function calculateDecision() {
 
 // Calculate decision using the backend API
 async function calculateDecisionWithAPI(inputs) {
-    const response = await fetch('http://localhost:5000/api/calculate', {
+    const response = await fetch('/api/calculate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
